@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="cuttib.itmox.chinesezodiac.presentation.main_fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/aiAdviceFragment"
+        android:name="cuttib.itmox.chinesezodiac.presentation.main_fragments.AIAdviceFragment"
+        android:label="fragment_a_i_advice"
+        tools:layout="@layout/fragment_a_i_advice" />
+    <fragment
+        android:id="@+id/rewardsFragment"
+        android:name="cuttib.itmox.chinesezodiac.presentation.main_fragments.RewardsFragment"
+        android:label="fragment_rewards"
+        tools:layout="@layout/fragment_rewards" />
+</navigation>

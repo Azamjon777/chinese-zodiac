@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="cuttib.itmox.chinesezodiac.presentation.start_fragments.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="cuttib.itmox.chinesezodiac.presentation.start_fragments.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_enterDataFragment"
+            app:destination="@id/enterDataFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_moreInfoFragment"
+            app:destination="@id/moreInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterDataFragment"
+        android:name="cuttib.itmox.chinesezodiac.presentation.start_fragments.EnterDataFragment"
+        android:label="fragment_enter_data"
+        tools:layout="@layout/fragment_enter_data" >
+        <action
+            android:id="@+id/action_enterDataFragment_to_moreInfoFragment"
+            app:destination="@id/moreInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreInfoFragment"
+        android:name="cuttib.itmox.chinesezodiac.presentation.start_fragments.MoreInfoFragment"
+        android:label="fragment_more_info"
+        tools:layout="@layout/fragment_more_info" />
+</navigation>
